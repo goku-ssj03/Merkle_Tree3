@@ -47,7 +47,7 @@ This project has 2 separate libraries:
 - #### [verifier/README.md](https://github.com/goku-ssj03/Merkle_Tree3/tree/main/verifier)
 - #### [integration/README.md](https://github.com/goku-ssj03/Merkle_Tree3/tree/main/integration)
 
-## Building and running the Integration ([demo](https://www.youtube.com/watch?v=8nOzZWyNWwo))
+## Building and running the Integration 
 
 Activate the verifier using the following commands.
 ``` 
@@ -79,7 +79,7 @@ Owner:~/Merkle_Tree3$
 Verifier's Terminal:
 Owner:~/Merkle_Tree3$ make 
 gcc -g    integration/server.c verifier/verifier.c -lm -lcrypto   
-Owner:~/Merkle-Tree_Library$ ./a.out
+Owner:~/Merkle_Tree3$ ./a.out
 [LISTENING] Port Number: 4455
 [CONNECTED] New Connection
 [PROVER] hello
@@ -150,24 +150,24 @@ Other instructions maybe:
 - To end the communication press B on the Verifier's side.
 
 To know about how data is sent to verifier and other in-depth things refer to  
-#### [integration/README.md](https://github.com/Adidev-KGP/Merkle-Tree-Library/tree/main/integration).
+#### [integration/README.md](https://github.com/Merkle_Tree3/tree/main/integration).
 
-## Building and running unit-tests([demo](https://www.youtube.com/watch?v=rr5vdA4gB94))
+## Building and running unit-tests
 
 You will find the unit tests for Prover and Verifier in 
-#### [tests/test_Prover](https://github.com/Adidev-KGP/Merkle-Tree-Library/tree/main/tests/test_Prover) 
+#### [tests/test_Prover](https://github.com/goku-ssj03/Merkle_Tree3/tree/main/tests/test_Prover) 
 and 
-#### [tests/test_Verifier](https://github.com/Adidev-KGP/Merkle-Tree-Library/tree/main/tests/test_Verifier) respectively. 
+#### [tests/test_Verifier](https://github.com/goku-ssj03/Merkle_Tree3/tree/main/tests/test_Verifier) respectively. 
 
 ### Running the Prover's unit-tests:
 
 Run all the tests in one go:
 ```
-Owner:~/Merkle-Tree_Library$ ./run_test.sh test_pv
+Owner:~/Merkle_Tree3$ ./run_test.sh test_pv
 
 Demo:
 
-Owner:~/Merkle-Tree_Library$ ./run_test.sh test_pv
+Owner:~/Merkle_Tree3$ ./run_test.sh test_pv
 
 running-test_node
 test-passed
@@ -283,7 +283,7 @@ test-passed
 test_make_tree - success
 
 Overall tests succeeeded
-Owner:~/Merkle-Tree_Library$ 
+Owner:~/Merkle_Tree3$ 
 
 ```
 
@@ -298,10 +298,10 @@ Example:
 
 pytest -m ceil_lg --disable-warnings
 
-Owner:~/Merkle-Tree_Library$ pytest -m ceil_lg --disable-warnings
+Owner:~/Merkle_Tree3$ pytest -m ceil_lg --disable-warnings
 ========================================= test session starts =========================================
 platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-1.0.0
-rootdir: /home/Owner/Merkle-Tree_Library
+rootdir: /home/Owner/Merkle_Tree3
 collected 11 items / 10 deselected / 1 selected                                                       
 
 tests/test_Prover/test_mer_math.py .                                                            [100%]
@@ -329,16 +329,16 @@ pytest -m set --disable-warnings
 
 Demo:
 
-Owner:~/Merkle-Tree_Library$ pytest -m set --disable-warnings
+Owner:~/Merkle_Tree3$ pytest -m set --disable-warnings
 ========================================= test session starts =========================================
 platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-1.0.0
-rootdir: /home/Owner/Merkle-Tree_Library
+rootdir: /home/Owner/Merkle_Tree3
 collected 11 items / 10 deselected / 1 selected                                                       
 
 tests/test_Prover/test_cls_merkle.py .                                                          [100%]
 
 ============================ 1 passed, 10 deselected, 11 warnings in 0.42s ============================
-Owner:~/Merkle-Tree_Library$ 
+Owner:~/Merkle_Tree3$ 
 ```
 
 List of all test functions with their markers:
@@ -383,20 +383,20 @@ def test_node()
 
 To run the ```test_dataextract.c``` unit-test program:
 ```
-Owner:~/Merkle-tree_Library$ ./run_test.sh dex
+Owner:~/Merkle_Tree3$ ./run_test.sh dex
 ```
 To run the ```test_hashfunc.c``` unit-test program:
 ```
-Owner:~/Merkle-tree_Library$ ./run_test.sh hfn
+Owner:~/Merkle_Tree3$ ./run_test.sh hfn
 ```
 To run the ```test_ver_merkle_proof.c``` unit-test program:
 ```
-Owner:~/Merkle-tree_Library$ ./run_test.sh ver_mer
+Owner:~/Merkle_Tree3$ ./run_test.sh ver_mer
 ```
 
 ```
 Demo:
-Owner:~/Merkle-Tree_Library$ ./run_test.sh dex
+Owner:~/Merkle_Tree3$ ./run_test.sh dex
 
 * Suite the_suite:
 ...
@@ -404,7 +404,7 @@ Owner:~/Merkle-Tree_Library$ ./run_test.sh dex
 
 Total: 3 tests (174 ticks, 0.000 sec), 414 assertions
 Pass: 3, fail: 0, skip: 0.
-Owner:~/Merkle-Tree_Library$ ./run_test.sh hfn
+Owner:~/Merkle_Tree3$ ./run_test.sh hfn
 
 * Suite the_suite:
 ...
@@ -412,7 +412,7 @@ Owner:~/Merkle-Tree_Library$ ./run_test.sh hfn
 
 Total: 3 tests (913 ticks, 0.001 sec), 480 assertions
 Pass: 3, fail: 0, skip: 0.
-Owner:~/Merkle-Tree_Library$ ./run_test.sh ver_mer
+Owner:~/Merkle_Tree3$ ./run_test.sh ver_mer
 
 * Suite the_suite:
 .
@@ -420,7 +420,7 @@ Owner:~/Merkle-Tree_Library$ ./run_test.sh ver_mer
 
 Total: 1 test (1637 ticks, 0.002 sec), 30 assertions
 Pass: 1, fail: 0, skip: 0.
-Owner:~/Merkle-Tree_Library$ 
+Owner:~/Merkle_Tree3$ 
 ```
 
 # Further Work
