@@ -43,20 +43,20 @@ This project has 2 separate libraries:
 - Integration of C library (integration/server.c)
 
 ## READMEs
-- #### [prover/README.md](https://github.com/goku-ssj03/Merkle-Tree-Library/tree/main/prover)
-- #### [verifier/README.md](https://github.com/goku-ssj03/Merkle-Tree-Library/tree/main/verifier)
-- #### [integration/README.md](https://github.com/goku-ssj03/Merkle-Tree-Library/tree/main/integration)
+- #### [prover/README.md](https://github.com/goku-ssj03/Merkle_Tree3/tree/main/prover)
+- #### [verifier/README.md](https://github.com/goku-ssj03/Merkle_Tree3/tree/main/verifier)
+- #### [integration/README.md](https://github.com/goku-ssj03/Merkle_Tree3/tree/main/integration)
 
 ## Building and running the Integration ([demo](https://www.youtube.com/watch?v=8nOzZWyNWwo))
 
 Activate the verifier using the following commands.
 ``` 
-~/Merkle-Tree_Library$ make
-~/Merkle-Tree_Library$ ./a.out
+~/Merkle_Tree3$ make
+~/Merkle_Tree3$ ./a.out
 ```
 Activate the prover using the following commands on a different terminal if you are on the same system.
 ```
-~/Merkle-Tree_Library$ python3 ./integration/client.py
+~/Merkle_Tree3$ python3 ./integration/client.py
 ```
 Once both the verifier and the prover have been activated you can start the communication between them.
 
@@ -64,20 +64,20 @@ Let me show you a demonstration of communication(prover starts the communication
 
 ```
 Prover's Terminal:
-Owner:~/Merkle-Tree_Library$ python3 ./integration/client.py
+Owner:~/Merkle_Tree3$ python3 ./integration/client.py
 Connecting to port:  ('localhost', 4455)
 hello
 [Server] get 3
 [Server] set 3 45 int
 [Server] get 7
 [DSICONNECTED] Connection closed
-Owner:~/Merkle-Tree_Library$ 
+Owner:~/Merkle_Tree3$ 
 
 ```
 
 ```
 Verifier's Terminal:
-Owner:~/Merkle-Tree_Library$ make 
+Owner:~/Merkle_Tree3$ make 
 gcc -g    integration/server.c verifier/verifier.c -lm -lcrypto   
 Owner:~/Merkle-Tree_Library$ ./a.out
 [LISTENING] Port Number: 4455
@@ -94,7 +94,7 @@ get 7
 Verified! The data sent is correct
 B
 [DISCONNECTED] Connection closed
-Owner:~/Merkle-Tree_Library$ 
+Owner:~/Merkle_Tree3$ 
 
 ```
 ### Instructions to run the Integration
