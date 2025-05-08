@@ -43,9 +43,9 @@ This project has 2 separate libraries:
 - Integration of C library (integration/server.c)
 
 ## READMEs
-- #### [prover/README.md](https://github.com/Adidev-KGP/Merkle-Tree-Library/tree/main/prover)
-- #### [verifier/README.md](https://github.com/Adidev-KGP/Merkle-Tree-Library/tree/main/verifier)
-- #### [integration/README.md](https://github.com/Adidev-KGP/Merkle-Tree-Library/tree/main/integration)
+- #### [prover/README.md](https://github.com/goku-ssj03/Merkle-Tree-Library/tree/main/prover)
+- #### [verifier/README.md](https://github.com/goku-ssj03/Merkle-Tree-Library/tree/main/verifier)
+- #### [integration/README.md](https://github.com/goku-ssj03/Merkle-Tree-Library/tree/main/integration)
 
 ## Building and running the Integration ([demo](https://www.youtube.com/watch?v=8nOzZWyNWwo))
 
