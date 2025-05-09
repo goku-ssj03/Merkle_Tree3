@@ -150,7 +150,7 @@ Other instructions maybe:
 - To end the communication press B on the Verifier's side.
 
 To know about how data is sent to verifier and other in-depth things refer to  
-#### [integration/README.md](https://github.com/Merkle_Tree3/tree/main/integration).
+#### [integration/README.md](https://github.com/goku-ssj03/Merkle_Tree3/tree/main/integration).
 
 ## Building and running unit-tests
 
